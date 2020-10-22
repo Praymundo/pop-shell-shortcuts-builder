@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+    pop-shell-shortcuts-builder:
+        build: .
+        image: pop-shell-shortcuts-builder
+        container_name: pop-shell-shortcuts-builder
+        network_mode: bridge
+        restart: "no"
+        volumes: 
+            - ../dist:/dist
